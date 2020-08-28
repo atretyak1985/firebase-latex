@@ -19,7 +19,6 @@ export class DashboardComponent implements OnInit, AfterViewInit {
     const edit = this.media.nativeElement;
     let editor;
 
-    let value;
     let textCollection = this.authService.GetText().pipe(take(1)).subscribe(val => {
       let placeholder = '';
       if(!val || val.length == 0){
